@@ -42,7 +42,7 @@ class UserController extends Controller
         ]);
         $token = $user->createToken('myapptoken')->plainTextToken;
 
-        $user->notify(new WelcomeNotification());
+        // $user->notify(new WelcomeNotification());
 
         $respons = [
             'user' => $user,
